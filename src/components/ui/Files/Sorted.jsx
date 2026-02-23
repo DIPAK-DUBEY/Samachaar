@@ -1,8 +1,13 @@
-import Navbar from "./components/ui/Files/Navbar";
-import { Globe } from "./components/ui/globe";
-import Choices from "./components/ui/Files/Choices";
-import DATA from "./components/ui/Files/DATA";
-const App = () => {
+import Navbar from "./Navbar";
+import { Globe } from "../globe";
+import Choices from "./Choices";
+import React from 'react'
+import { useParams } from 'react-router'
+import DATA from "./DATA";
+const Sorted = () => {
+  const { id } = useParams();
+
+
   return (
     <>
       <div className="sticky top-40 opacity-20">
@@ -14,10 +19,12 @@ const App = () => {
           className="flex flex-row gap-5 justify-center mt-4 flex-wrap">
           <Choices />
         </div>
-        <DATA />
-
+        <DATA  data={id}/>
       </div>
+
+
     </>
   )
 }
-export default App;
+
+export default Sorted
