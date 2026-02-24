@@ -10,6 +10,7 @@ const Sorted = () => {
 
   return (
     <>
+    
       <div className="sticky top-40 opacity-20">
         <Globe />
       </div>
@@ -28,3 +29,6 @@ const Sorted = () => {
 }
 
 export default Sorted
+
+// u have to print the longest palindrome in the string : 
+

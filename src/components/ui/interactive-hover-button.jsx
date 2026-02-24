@@ -9,15 +9,15 @@ export function InteractiveHoverButton({
     <button 
       onClick={datatotoggle}
       className={cn(
-        "group bg-background relative w-auto cursor-pointer overflow-hidden rounded-full border p-2 px-6 text-center font-semibold",
+        "group bg-background relative w-auto cursor-pointer overflow-hidden rounded-full border p-2 px-4 text-center font-semibold sm:px-6 md:px-8 lg:px-10",
         className
       )}
     >
       <div className="flex items-center gap-2">
         <div
-          className="bg-primary h-2 w-2 rounded-full transition-all duration-600 group-hover:scale-[100.8]"></div>
+          className="bg-primary h-2 w-2 rounded-full transition-all duration-600 group-hover:scale-[100.1]"></div>
         <span
-          className="inline-block transition-all duration-300 group-hover:translate-x-12 group-hover:opacity-0">
+          className="inline-block transition-all duration-300 group-hover:opacity-0">
           {children}
         </span>
       </div>

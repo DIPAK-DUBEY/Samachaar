@@ -2,6 +2,7 @@ import Navbar from "./components/ui/Files/Navbar";
 import { Globe } from "./components/ui/globe";
 import Choices from "./components/ui/Files/Choices";
 import DATA from "./components/ui/Files/DATA";
+import Checking from "./components/ui/Files/Checking";
 const App = () => {
   return (
     <>
@@ -12,9 +13,9 @@ const App = () => {
         <Navbar />
         <div
           className="flex flex-row gap-5 justify-center mt-4 flex-wrap">
-          <Choices />
+            <Choices/>
+          <Checking />
         </div>
-        <DATA />
 
       </div>
     </>

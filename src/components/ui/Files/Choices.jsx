@@ -2,7 +2,7 @@ import { useNavigate } from "react-router"
 import { InteractiveHoverButton } from "@/components/ui/interactive-hover-button"
 const Choices = () => {
   const navigate = useNavigate();
-  const values = ['Science', 'Technology', 'AI', 'Cricket', 'Movies', 'India']
+  const values = ['Science', 'Technology', 'AI', 'Cricket', 'Movies', 'India','Chennai','Favourate']
   return (
     values.map((items) => {
       return (

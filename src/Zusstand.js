@@ -12,3 +12,8 @@ const useStore = create((set) => ({
   setsorteddata: (value) => set({ sortbychoices: value })
 }))
 export default useStore
+
+/*
+
+https://api.worldnewsapi.com/search-news?source-country=in&language=hi&number=100&api-key=8382fe2eecc549f585f8c0eeb69780bf
+*/
