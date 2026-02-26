@@ -9,7 +9,9 @@ const useStore = create((set) => ({
   setFetchData: (value) => set({ fetchData: value }),
 
   sortbychoices: '',
-  setsorteddata: (value) => set({ sortbychoices: value })
+  setsorteddata: (value) => set({ sortbychoices: value }),
+  Menu:false,
+  setMenu:(value)=>set({Menu:value})
 }))
 export default useStore
 
@@ -17,3 +19,4 @@ export default useStore
 
 https://api.worldnewsapi.com/search-news?source-country=in&language=hi&number=100&api-key=8382fe2eecc549f585f8c0eeb69780bf
 */
+

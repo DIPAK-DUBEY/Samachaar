@@ -2,7 +2,6 @@ import { Badge } from "@/components/ui/badge"
 import { Button } from "@/components/ui/button"
 import {
   Card,
-  CardAction,
   CardDescription,
   CardFooter,
   CardHeader,
@@ -17,7 +16,7 @@ export function CardImage({
   datatotoggle
 }) {
   return (
-    <Card className="relative mx-auto w-full max-w-sm pt-0 overflow-hidden ">
+    <Card className="relative mx-auto  max-w-sm pt-0 overflow-hidden ">
       <div className="absolute inset-0 z-30 aspect-video   bg-black/35" />
 
       <img
@@ -28,17 +27,11 @@ export function CardImage({
       />
 
       <CardHeader>
-        <CardTitle className='line-clamp-2 cursor-pointer' onClick={() => window.open((datatotoggle))}>{title}</CardTitle>
-        {/* 
-          
-            */}
-
-
+        <CardTitle className='line-clamp-2 cursor-pointer leading-tight' onClick={() => window.open((datatotoggle))}>{title}</CardTitle>
         <CardDescription className='line-clamp-4'>
           {description}
         </CardDescription>
       </CardHeader>
-
       <CardFooter className=' flex flex-row justify-between items-center'>
         <Badge
           variant="secondary"
